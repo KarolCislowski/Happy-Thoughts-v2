@@ -13,7 +13,7 @@ const Posts = () => {
   const token = window.localStorage.accessToken
 
   useEffect(() => {
-    fetch('http://localhost:8080/messages', {
+    fetch('https://cislowski-happy.herokuapp.com/messages', {
       headers: {
         Authorization: token
       }

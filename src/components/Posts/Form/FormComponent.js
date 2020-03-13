@@ -12,7 +12,7 @@ const FormComponent = () => {
   const token = window.localStorage.accessToken
 
   const submitHandler = () => {
-    fetch('http://localhost:8080/messages', {
+    fetch('https://cislowski-happy.herokuapp.com/messages', {
       method: 'post',
       body: JSON.stringify({ message }),
       headers: {

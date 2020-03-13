@@ -19,7 +19,7 @@ export const Signup = () => {
   const [error, setError] = useState(false)
   const history = useHistory()
 
-  const url = 'http://localhost:8080/users'
+  const url = 'https://cislowski-happy.herokuapp.com/users'
 
   const handleSubmit = (e) => {
     e.preventDefault()

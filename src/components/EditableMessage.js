@@ -12,9 +12,10 @@ export const EditableMessage = ({ message, id }) => {
   const token = window.localStorage.accessToken
   const [editMode, setEditMode] = useState(false)
   const [newMessage, setNewMessage] = useState(message)
+  const url = 'https://cislowski-happy.herokuapp.com/'
 
   const handleDelete = () => {
-    fetch(`http://localhost:8080/messages/${id}`, {
+    fetch(`${url}messages/${id}`, {
       method: 'delete',
       headers: {
         Authorization: token
@@ -25,7 +26,7 @@ export const EditableMessage = ({ message, id }) => {
   }
 
   const handleUpdate = () => {
-    fetch(`http://localhost:8080/messages/${id}`, {
+    fetch(`${url}messages/${id}`, {
       method: 'put',
       body: JSON.stringify({ message: newMessage }),
       headers: {

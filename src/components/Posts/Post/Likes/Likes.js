@@ -10,7 +10,7 @@ const Likes = ({ likes, id }) => {
   const token = window.localStorage.accessToken
 
   const likeClickHandler = () => {
-    fetch(`http://localhost:8080/messages/${id}/like`, {
+    fetch(`https://cislowski-happy.herokuapp.com/messages/${id}/like`, {
       method: 'post',
       headers: {
         Authorization: token

@@ -6,7 +6,7 @@ export const Profile = () => {
   const [messages, setMessages] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:8080/users/messages', {
+    fetch('https://cislowski-happy.herokuapp.com/users/messages', {
       headers: {
         Authorization: token
       }
