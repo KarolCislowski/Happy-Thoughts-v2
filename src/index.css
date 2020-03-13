@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-y: scroll;
+  height: 100%;
+  display: block;
+  font-size: 15px;
+}
+
+.post {
+  border-top: 6px solid #e6ecf0;
+  padding: 10px;
+}
+
+.wrongLength {
+  color: #ff4328;
+}
+
+.goodLength {
+  color: #087a00;
+}
+
+.submit-form {
+  margin: 10px;
+}
+
+.textarea {
+  border: 1px solid #eee;
+  resize: none;
+}
+
+.time {
+  font-size: 0.8rem;
+}
